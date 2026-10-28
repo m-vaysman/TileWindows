@@ -1,12 +1,12 @@
 # Tile Windows
 
 <p align="center">
-  <img src="assets/icon.png" alt="Tile Windows icon" width="128" height="128" />
+  <img src="assets/icon.svg" alt="Tile Windows icon" width="128" />
 </p>
 
 **Double-click** desktop utility for Windows. It tiles the visible windows on your **current** virtual desktop across the primary monitor work area (above the taskbar). Windows on other desktops are left alone.
 
-![Before and after tiling](assets/before-after.jpg)
+![Before and after tiling](assets/before-after.svg)
 
 ## How it works
 
