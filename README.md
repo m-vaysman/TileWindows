@@ -23,10 +23,9 @@ flowchart LR
 | Open windows | Layout |
 | ---: | --- |
 | 1 | Fills the work area |
-| 2–3 | Equal-width **columns** side by side |
-| 4 | **2×2** grid |
-| 5+ | Near-square grid |
+| 2+ | Columns sized to the screen's shape (about 16:10 tiles), rows balanced as evenly as possible |
 
+Every row is split across the full width, so a short row stretches its windows instead of leaving an empty cell. On a 5120x1440 ultrawide, up to 5 windows sit side by side in one row.
 ```text
   2 windows              3 windows              4 windows
 ┌─────────┬─────────┐  ┌────┬────┬────┐  ┌─────────┬─────────┐
@@ -63,11 +62,11 @@ Optional: set the shortcut icon to `assets/icon.ico`.
 
 ## Behavior notes
 
-- Operates on the **active** virtual desktop only.
-- Skips minimized windows, untitled windows, tool windows, and the desktop shell.
+- Operates on the **active** virtual desktop only (cloaked windows are skipped).
+- Skips minimized windows, untitled windows, tool windows, the desktop shell, and fixed-size dialogs that can't be resized.
 - Restores maximized windows before moving them.
 - Uses the primary monitor **work area** so the taskbar is not covered.
-
+- DPI aware, and accounts for the invisible Windows 10/11 resize border, so tiles fill the screen edge to edge.
 ## License
 
 MIT — see [LICENSE](LICENSE).
